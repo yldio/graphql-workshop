@@ -1,11 +1,12 @@
-require('dotenv').config()
 const { ApolloServer, gql } = require('apollo-server')
 const Sequelize = require('sequelize')
 
+require('dotenv').config()
+
 const sequelize = new Sequelize(
-  `postgres://${process.env.USERNAME}:${
-    process.env.PASSWORD
-  }@ec2-23-23-247-245.compute-1.amazonaws.com:5432/${process.env.DB}`,
+  `postgres://${process.env.USERNAME}:${process.env.PASSWORD}@eYOUR-HOST:5432/${
+    process.env.DB
+  }`,
   {
     ssl: true,
     dialectOptions: {
@@ -23,12 +24,7 @@ const Framework = sequelize.define('frameworks', {
   }
 })
 
-// Type definitions define the "shape" of your data and specify
-// which ways the data can be fetched from the GraphQL server.
 const typeDefs = gql`
-  # Comments in GraphQL are defined with the hash (#) symbol.
-
-  # This "Book" type can be used in other type declarations.
   type Framework {
     id: String
     name: String
@@ -41,8 +37,6 @@ const typeDefs = gql`
 
 `
 
-// Resolvers define the technique for fetching the types in the
-// schema.  We'll retrieve books from the "books" array above.
 const resolvers = {
   Query: {
     frameworks: async () => {

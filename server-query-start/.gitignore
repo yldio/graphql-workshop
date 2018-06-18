@@ -1,4 +1,4 @@
-node_modules
+node_modules/
 .DS_Store
 Thumbs.db
 .idea/
@@ -7,3 +7,4 @@ Thumbs.db
 *.sublime-workspace
 *.log
 package-lock.json
+.env
