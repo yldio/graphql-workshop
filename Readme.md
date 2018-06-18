@@ -36,24 +36,12 @@ Endpoint: https://api.graphcms.com/simple/v1/awesomeTalksClone
 
 ### Mutations
 
-<<<<<<< HEAD
-
-=======
-
-> > > > > > > 51d475a4bc80fc1ab9385878abd6e1d99366c753
-
 - 1: Start - https://codesandbox.io/s/xxx
 - 1: End - https://codesandbox.io/s/xxx
 - 2: Update UI - Start: https://codesandbox.io/s/xxx
 - 2: Update UI - End: https://codesandbox.io/s/xxx
 
 ### Pagination
-
-<<<<<<< HEAD
-
-=======
-
-> > > > > > > 51d475a4bc80fc1ab9385878abd6e1d99366c753
 
 - 1: Start - https://codesandbox.io/s/xxx
 - 1: End - https://codesandbox.io/s/xxx
