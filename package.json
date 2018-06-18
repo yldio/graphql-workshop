@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "format": "prettier --write '**/*.{,md}'"
+  },
+  "devDependencies": {
+    "prettier": "^1.13.5"
+  }
+}
