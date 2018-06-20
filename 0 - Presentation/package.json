@@ -1,0 +1,19 @@
+{
+  "name": "graphql-workshop-presentation",
+  "version": "0.1.0",
+  "dependencies": {
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "spectacle-scripts": "2.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "dev": "react-scripts start",
+    "build": "react-scripts build",
+    "format": "prettier --write '**/*.{js,css,md}'",
+    "posttest": "npm run format"
+  },
+  "devDependencies": {
+    "prettier": "^1.13.5"
+  }
+}
