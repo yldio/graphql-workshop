@@ -1,17 +1,5 @@
-# graphql-workshop
+# What we are going to build
 
-...
+In this exercise we will build a query that gets the info from a postgres DB on heroku so that you get a better overview of how you can show data from a database straight into your graphql api
 
-## Change log
-
-The change log can be found on the [Releases page](https://github.com/https://github.com/SaraVieira/graphql-workshop/releases).
-
-## Contributing
-
-Everyone is welcome to contribute. Please take a moment to review the [contributing guidelines](Contributing.md).
-
-## Authors and license
-
-[Sara Vieira](https://iamsaravieira.com) and [contributors](https://github.com/https://github.com/SaraVieira/graphql-workshop/graphs/contributors).
-
-MIT License, see the included [License.md](License.md) file.
+## [Deploy](https://graphql-workshop-2.now.sh)
