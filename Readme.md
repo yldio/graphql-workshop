@@ -6,6 +6,7 @@
 - I use yarn but npm is 💯
 - Git
 - Heroku Account - https://heroku.com/
+- Postgres DB in Heroku - Video on how to do it: https://cdn.rawgit.com/SaraVieira/graphql-workshop/13d73f3b/howtoheroku.mp4
 - CodeSanbox Account is preferred so you can keep all the files in your account
 - Javascript knowledge
 - React knowledge
