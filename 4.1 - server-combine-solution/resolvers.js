@@ -1,6 +1,6 @@
-const axios = require('axios')
-const Sequelize = require('sequelize')
-require('dotenv').config()
+const axios = require("axios");
+const Sequelize = require("sequelize");
+require("dotenv").config();
 
 const sequelize = new Sequelize(
   `postgres://${process.env.USERNAME}:${
@@ -12,9 +12,9 @@ const sequelize = new Sequelize(
       ssl: true
     }
   }
-)
+);
 
-const Framework = sequelize.define('frameworks', {
+const Framework = sequelize.define("frameworks", {
   name: {
     type: Sequelize.STRING
   },
@@ -22,37 +22,29 @@ const Framework = sequelize.define('frameworks', {
     type: Sequelize.STRING
   },
   stars: { type: Sequelize.INTEGER, defaultValue: 0 }
-})
+});
+Framework.sync();
+
 module.exports = {
   Query: {
-    frameworks: async () => {
-      await Framework.sync()
-      try {
-        const frameworks = await Framework.findAll()
-
-        return frameworks
-      } catch (e) {
-        throw new Error(e)
-      }
-    }
+    frameworks: () => Framework.findAll()
   },
   Mutation: {
     addFramework: async (_, { name, git }) => {
-      await Framework.sync()
       try {
-        const url = git.split('https://github.com/')[1]
-        const stars = await axios(`https://api.github.com/repos/${url}`)
+        const url = git.split("https://github.com/")[1];
+        const stars = await axios(`https://api.github.com/repos/${url}`);
 
         const framework = Framework.create({
           name,
           git,
           stars: stars.data.stargazers_count
-        })
+        });
 
-        return framework
+        return framework;
       } catch (e) {
-        throw new Error(e)
+        throw new Error(e);
       }
     }
   }
-}
+};

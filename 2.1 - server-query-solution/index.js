@@ -1,6 +1,6 @@
-require('dotenv').config()
-const { ApolloServer, gql } = require('apollo-server')
-const Sequelize = require('sequelize')
+require("dotenv").config();
+const { ApolloServer, gql } = require("apollo-server");
+const Sequelize = require("sequelize");
 
 const sequelize = new Sequelize(
   `postgres://${process.env.USERNAME}:${
@@ -12,16 +12,16 @@ const sequelize = new Sequelize(
       ssl: true
     }
   }
-)
+);
 
-const Framework = sequelize.define('frameworks', {
+const Framework = sequelize.define("frameworks", {
   name: {
     type: Sequelize.STRING
   },
   git: {
     type: Sequelize.STRING
   }
-})
+});
 
 // Type definitions define the "shape" of your data and specify
 // which ways the data can be fetched from the GraphQL server.
@@ -38,26 +38,17 @@ const typeDefs = gql`
   type Query {
     frameworks: [Framework]
   }
-
-`
+`;
 
 // Resolvers define the technique for fetching the types in the
 // schema.  We'll retrieve books from the "books" array above.
 const resolvers = {
   Query: {
-    frameworks: async () => {
-      try {
-        const frameworks = await Framework.findAll()
-
-        return frameworks
-      } catch (e) {
-        throw new Error(e)
-      }
-    }
+    frameworks: () => Framework.findAll()
   }
-}
-const server = new ApolloServer({ typeDefs, resolvers })
+};
+const server = new ApolloServer({ typeDefs, resolvers });
 
 server.listen().then(({ url }) => {
-  console.log(`🚀  Server ready at ${url}`)
-})
+  console.log(`🚀  Server ready at ${url}`);
+});

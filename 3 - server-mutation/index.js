@@ -1,7 +1,7 @@
-const { ApolloServer, gql } = require('apollo-server')
-const Sequelize = require('sequelize')
+const { ApolloServer, gql } = require("apollo-server");
+const Sequelize = require("sequelize");
 
-require('dotenv').config()
+require("dotenv").config();
 
 const sequelize = new Sequelize(
   `postgres://${process.env.USERNAME}:${process.env.PASSWORD}@eYOUR-HOST:5432/${
@@ -13,16 +13,16 @@ const sequelize = new Sequelize(
       ssl: true
     }
   }
-)
+);
 
-const Framework = sequelize.define('frameworks', {
+const Framework = sequelize.define("frameworks", {
   name: {
     type: Sequelize.STRING
   },
   git: {
     type: Sequelize.STRING
   }
-})
+});
 
 const typeDefs = gql`
   type Framework {
@@ -34,24 +34,15 @@ const typeDefs = gql`
   type Query {
     frameworks: [Framework]
   }
-
-`
+`;
 
 const resolvers = {
   Query: {
-    frameworks: async () => {
-      try {
-        const frameworks = await Framework.findAll()
-
-        return frameworks
-      } catch (e) {
-        throw new Error(e)
-      }
-    }
+    frameworks: () => Framework.findAll()
   }
-}
-const server = new ApolloServer({ typeDefs, resolvers })
+};
+const server = new ApolloServer({ typeDefs, resolvers });
 
 server.listen().then(({ url }) => {
-  console.log(`🚀  Server ready at ${url}`)
-})
+  console.log(`🚀  Server ready at ${url}`);
+});
