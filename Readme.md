@@ -10,6 +10,11 @@
 - Javascript knowledge
 - React knowledge
 
+## What We will be building:
+
+- Server: https://graphql-workshop-server.now.sh/
+- Front End: https://graphql-workshop-fe.now.sh/
+
 ## Start
 
 ```bash
