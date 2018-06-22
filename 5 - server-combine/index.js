@@ -50,7 +50,7 @@ const resolvers = {
   Mutation: {
     addFramework: async (_, { name, git }) => {
       try {
-        const framework = Framework.create({
+        const framework = await Framework.create({
           name,
           git
         });

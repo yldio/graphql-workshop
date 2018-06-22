@@ -21,9 +21,13 @@ const Framework = sequelize.define("frameworks", {
   git: {
     type: Sequelize.STRING
   },
-  stars: { type: Sequelize.INTEGER, defaultValue: 0 }
+  stars: { type: Sequelize.INTEGER, defaultValue: 0 },
+  description: { type: Sequelize.STRING, defaultValue: "" },
+  avatar: { type: Sequelize.STRING, defaultValue: "" }
 });
-Framework.sync();
+
+// Framework.sync({ force: true });
+//Framework.sync();
 
 module.exports = {
   Query: {
@@ -33,12 +37,14 @@ module.exports = {
     addFramework: async (_, { name, git }) => {
       try {
         const url = git.split("https://github.com/")[1];
-        const stars = await axios(`https://api.github.com/repos/${url}`);
+        const gh = await axios(`https://api.github.com/repos/${url}`);
 
         const framework = await Framework.create({
           name,
           git,
-          stars: stars.data.stargazers_count
+          stars: gh.data.stargazers_count,
+          description: gh.data.description,
+          avatar: gh.data.owner.avatar_url
         });
 
         return framework;
