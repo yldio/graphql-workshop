@@ -40,6 +40,9 @@ const typeDefs = gql`
 
   type Mutation {
     addFramework(name: String, git: String): Framework
+    # there is a method called findById that will return a Framework and then you can use that Framework to call destroy on it
+    # Good luck
+    # removeFramework(id: ID): Framework
   }
 `;
 

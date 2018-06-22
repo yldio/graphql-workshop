@@ -40,6 +40,7 @@ const typeDefs = gql`
 
   type Mutation {
     addFramework(name: String, git: String): Framework
+    removeFramework(id: ID): Framework
   }
 `;
 
@@ -48,6 +49,18 @@ const resolvers = {
     frameworks: () => Framework.findAll()
   },
   Mutation: {
+    removeFramework: async (_, { id }) => {
+      try {
+        const framework = await Framework.findById(id);
+
+        framework.destroy();
+
+        return framework;
+      } catch (e) {
+        throw new Error(e);
+      }
+    },
+
     addFramework: async (_, { name, git }) => {
       try {
         const framework = await Framework.create({
