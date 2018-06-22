@@ -27,7 +27,6 @@ Framework.sync();
 
 const typeDefs = gql`
   # Comments in GraphQL are defined with the hash (#) symbol.
-
   type Framework {
     id: String
     name: String
@@ -45,12 +44,12 @@ const typeDefs = gql`
 
 const resolvers = {
   Query: {
-    frameworks: () => Framework.findAll()
+    frameworks: (_, ___, ctx) => ctx.db.findAll()
   },
   Mutation: {
-    addFramework: async (_, { name, git }) => {
+    addFramework: async (_, { name, git }, ctx) => {
       try {
-        const framework = Framework.create({
+        const framework = ctx.db.create({
           name,
           git
         });
@@ -62,7 +61,12 @@ const resolvers = {
     }
   }
 };
-const server = new ApolloServer({ typeDefs, resolvers });
+
+const context = {
+  db: Framework
+};
+
+const server = new ApolloServer({ typeDefs, resolvers, context });
 
 server.listen().then(({ url }) => {
   console.log(`🚀  Server ready at ${url}`);

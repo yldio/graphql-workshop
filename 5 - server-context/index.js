@@ -4,9 +4,9 @@ const Sequelize = require("sequelize");
 require("dotenv").config();
 
 const sequelize = new Sequelize(
-  `postgres://${process.env.USERNAME}:${
-    process.env.PASSWORD
-  }@ec2-23-23-247-245.compute-1.amazonaws.com:5432/${process.env.DB}`,
+  `postgres://${process.env.USERNAME}:${process.env.PASSWORD}@eYOUR-HOST:5432/${
+    process.env.DB
+  }`,
   {
     ssl: true,
     dialectOptions: {
@@ -27,7 +27,6 @@ Framework.sync();
 
 const typeDefs = gql`
   # Comments in GraphQL are defined with the hash (#) symbol.
-
   type Framework {
     id: String
     name: String
