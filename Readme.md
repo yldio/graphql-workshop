@@ -42,10 +42,13 @@ Endpoint: https://api.graphcms.com/simple/v1/awesomeTalksClone
 - 3: Variables in Query - Start: https://codesandbox.io/s/y20oywypmx
 - 3: Variables in Query - End: https://codesandbox.io/s/x7513py6rq
 - 3.1: Variables - Exercise - https://codesandbox.io/s/k9l6ypj7p5
+- 3.1: Variables - Exercise - End - https://codesandbox.io/s/pkkxjv287j
+
 
 ### Mutations
 
 - 1: Start - https://codesandbox.io/s/l5k20vz4v7
 - 1: End - https://codesandbox.io/s/q312699npq
+- 1.1 - Exercise Start: https://codesandbox.io/s/2vz43jylrr
 - 2: Update UI - Start: https://codesandbox.io/s/zzwx03v53
 - 2: Update UI - End: https://codesandbox.io/s/r74mqn22jm
