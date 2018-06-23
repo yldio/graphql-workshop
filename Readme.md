@@ -52,3 +52,8 @@ Endpoint: https://api.graphcms.com/simple/v1/awesomeTalksClone
 - 1.1 - Exercise Start: https://codesandbox.io/s/2vz43jylrr
 - 2: Update UI - Start: https://codesandbox.io/s/zzwx03v53
 - 2: Update UI - End: https://codesandbox.io/s/r74mqn22jm
+
+### Pagination:
+
+- 1: Start - https://codesandbox.io/s/pkzxqwn88m
+- 1: End - https://codesandbox.io/s/jvxmp65j0w
