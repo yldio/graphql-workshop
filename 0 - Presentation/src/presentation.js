@@ -1,10 +1,10 @@
 // Import React
 import React from "react"
+import YouTube from "react-youtube"
 
 // Import Spectacle Core tags
 import {
-  BlockQuote,
-  Cite,
+  Link,
   Deck,
   Heading,
   ListItem,
@@ -51,10 +51,7 @@ export default class Presentation extends React.Component {
             Let's Learn GraphQL
           </Heading>
         </Slide>
-        <Slide
-          bgColor="secondary"
-          notes="So, my name is Sara and I am FE developer for YLD, a react and node consultancy that works out of london and lisbon.I'm always on twitter and you should follow me there if you like this sort of weird humor and rants."
-        >
+        <Slide bgColor="secondary">
           <Layout
             style={{
               minWidth: 500,
@@ -126,6 +123,21 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
           <Heading size={2} textColor="primary" caps>
+            Internet
+          </Heading>
+          <Text textColor="primary">Username: invite@ynov.com</Text>
+          <Text textColor="primary">Password: Qb7HZWcN</Text>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+          <Heading size={2} textColor="primary" caps>
+            Repo
+          </Heading>
+          <Link href="https://git.io/f4yA8" textColor="primary">
+            https://git.io/f4yA8
+          </Link>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+          <Heading size={2} textColor="primary" caps>
             What is GraphQL?
           </Heading>
           <Image
@@ -150,21 +162,10 @@ export default class Presentation extends React.Component {
           <Image style="max-width: 40%;" src={images.one} />
         </Slide>
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
-          <Heading size={6} textColor="secondary" caps>
-            Standard List
-          </Heading>
-          <List>
-            <ListItem>Item 1</ListItem>
-            <ListItem>Item 2</ListItem>
-            <ListItem>Item 3</ListItem>
-            <ListItem>Item 4</ListItem>
-          </List>
+          <YouTube videoId="oCT4HOJsUZQ" />
         </Slide>
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
-          <BlockQuote>
-            <Quote>Example Quote</Quote>
-            <Cite>Author</Cite>
-          </BlockQuote>
+          <YouTube videoId="T571423fC68" />
         </Slide>
       </Deck>
     )

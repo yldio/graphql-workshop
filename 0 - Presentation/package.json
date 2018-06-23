@@ -4,6 +4,7 @@
   "dependencies": {
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+    "react-youtube": "^7.6.0",
     "spectacle-scripts": "2.0.0"
   },
   "scripts": {
