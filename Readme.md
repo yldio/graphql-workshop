@@ -48,8 +48,3 @@ Endpoint: https://api.graphcms.com/simple/v1/awesomeTalksClone
 - 1: End - https://codesandbox.io/s/q312699npq
 - 2: Update UI - Start: https://codesandbox.io/s/zzwx03v53
 - 2: Update UI - End: https://codesandbox.io/s/r74mqn22jm
-
-### Pagination
-
-- 1: Start - https://codesandbox.io/s/xxx
-- 1: End - https://codesandbox.io/s/xxx
