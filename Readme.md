@@ -41,6 +41,7 @@ Endpoint: https://api.graphcms.com/simple/v1/awesomeTalksClone
 - 2: Make your own query component - End: https://codesandbox.io/s/v1qk8y0xw7
 - 3: Variables in Query - Start: https://codesandbox.io/s/y20oywypmx
 - 3: Variables in Query - End: https://codesandbox.io/s/x7513py6rq
+- 3.1: Variables - Exercise - https://codesandbox.io/s/k9l6ypj7p5
 
 ### Mutations
 
