@@ -35,6 +35,8 @@ Endpoint: https://api.graphcms.com/simple/v1/awesomeTalksClone
 
 - 1: Start - https://codesandbox.io/s/p3nz4p0w60
 - 1: End - https://codesandbox.io/s/ql2zjk19qw
+- 1.1 - Query Exercise: https://codesandbox.io/s/177w5v217
+- 1.2 - Query Exercise Solution: https://codesandbox.io/s/r0jrnj59vq
 - 2: Make your own query component - Start: https://codesandbox.io/s/n5m93n3y14
 - 2: Make your own query component - End: https://codesandbox.io/s/v1qk8y0xw7
 - 3: Variables in Query - Start: https://codesandbox.io/s/y20oywypmx
@@ -46,8 +48,3 @@ Endpoint: https://api.graphcms.com/simple/v1/awesomeTalksClone
 - 1: End - https://codesandbox.io/s/q312699npq
 - 2: Update UI - Start: https://codesandbox.io/s/zzwx03v53
 - 2: Update UI - End: https://codesandbox.io/s/r74mqn22jm
-
-### Pagination
-
-- 1: Start - https://codesandbox.io/s/xxx
-- 1: End - https://codesandbox.io/s/xxx
