@@ -1,12 +1,12 @@
 const { ApolloServer, gql } = require("apollo-server");
 const Sequelize = require("sequelize");
 
-require("dotenv").config();
+require("dotenv").config({ path: "../.env" });
 
 const sequelize = new Sequelize(
-  `postgres://${process.env.USERNAME}:${process.env.PASSWORD}@eYOUR-HOST:5432/${
-    process.env.DB
-  }`,
+  `postgres://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@${
+    process.env.DB_HOST
+  }:5432/${process.env.DB}`,
   {
     ssl: true,
     dialectOptions: {
