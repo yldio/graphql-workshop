@@ -9,7 +9,6 @@ import {
   Heading,
   ListItem,
   List,
-  Quote,
   Slide,
   Text,
   Fit,
@@ -123,13 +122,6 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
           <Heading size={2} textColor="primary" caps>
-            Internet
-          </Heading>
-          <Text textColor="primary">Username: invite@ynov.com</Text>
-          <Text textColor="primary">Password: Qb7HZWcN</Text>
-        </Slide>
-        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
-          <Heading size={2} textColor="primary" caps>
             Repo
           </Heading>
           <Link href="https://git.io/f4yA8" textColor="primary">
@@ -141,7 +133,7 @@ export default class Presentation extends React.Component {
             What is GraphQL?
           </Heading>
           <Image
-            style="max-width: 40%;"
+            style={{ maxWidth: "40%" }}
             src="https://upload.wikimedia.org/wikipedia/commons/1/17/GraphQL_Logo.svg"
           />
         </Slide>
@@ -159,7 +151,17 @@ export default class Presentation extends React.Component {
           <Heading size={6} textColor="primary" caps>
             Unlike rest you request exacly what you want
           </Heading>
-          <Image style="max-width: 40%;" src={images.one} />
+          <Image style={{ maxWidth: "40%" }} src={images.one} />
+        </Slide>
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+          <Heading size={2} textColor="primary">
+            It's typed
+          </Heading>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+          <Heading size={2} textColor="primary">
+            It has great tooling
+          </Heading>
         </Slide>
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
           <YouTube videoId="oCT4HOJsUZQ" />
