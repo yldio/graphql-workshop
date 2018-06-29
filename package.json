@@ -1,8 +1,13 @@
 {
   "scripts": {
-    "format": "prettier --write '**/*.{,md}'"
+    "format": "prettier --write '**/*.{,md}'",
+    "contributors:add": "all-contributors add",
+    "contributors:generate": "all-contributors generate"
   },
   "devDependencies": {
     "prettier": "^1.13.5"
+  },
+  "dependencies": {
+    "all-contributors-cli": "^5.2.1"
   }
 }
