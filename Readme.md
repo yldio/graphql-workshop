@@ -50,6 +50,8 @@ Endpoint: https://api.graphcms.com/simple/v1/awesomeTalksClone
 - 1: Start - https://codesandbox.io/s/l5k20vz4v7
 - 1: End - https://codesandbox.io/s/q312699npq
 - 1.1 - Exercise Start: https://codesandbox.io/s/2vz43jylrr
+- 1.2 - Exercise End: https://codesandbox.io/s/yqr36koox9
 - 2: Update UI - Start: https://codesandbox.io/s/zzwx03v53
 - 2: Update UI - End: https://codesandbox.io/s/r74mqn22jm
+- 2.1: Update Ui Exercise: https://codesandbox.io/s/yqr36koox9
 
