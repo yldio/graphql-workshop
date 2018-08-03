@@ -56,6 +56,17 @@ cd server-start-start
 yarn dev
 ```
 
+## Videos (4h)
+
+- Part 1 (41:54m) - https://www.youtube.com/watch?v=Ql_iiJH0whM
+- Part 2 (48:56m) - https://www.youtube.com/watch?v=2DT6esPbO_U
+- Part 3 (45:58m) - https://www.youtube.com/watch?v=yO-mqTln-co
+- Part 4 (25:04m) - https://www.youtube.com/watch?v=fIfRfbjiBUI
+- Part 5 (1h 16:15m) - https://www.youtube.com/watch?v=9bz2xKqDkek
+
+
+## Eexercises
+
 ### Queries
 
 - 1: Start - https://codesandbox.io/s/p3nz4p0w60
