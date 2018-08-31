@@ -2,7 +2,7 @@
 
 So you want to learn GraphQL? That is awesome! But like any other technology it's not easy to get started and get the basics of it mainly because all the docs are spread all over the place.
 
-In this 8 hour workshop we will create a GraphQL server, connect it to a Postgres database in Heroku to have a fully functional server.
+In this 8 hour workshop we will create a GraphQL server with Apollo Server, connect it to a Postgres database in Heroku to have a fully functional GraphQL Server.
 
 After that we will jump to the frontend using React and Apollo to query and mutate a GraphQL Endpoint easily.
 
