@@ -1,0 +1,231 @@
+export { default as theme } from './src'
+import { Head, Image } from 'mdx-deck'
+import { CodeSurfer } from 'mdx-deck-code-surfer'
+import nightOwl from 'prism-react-renderer/themes/nightOwl'
+import {Layout, LayoutNoFooter, CodeSanbox, Split, BGImage} from './src'
+
+
+
+<Head>
+  <title>GraphQL Workshop</title>
+</Head>
+
+# GraphQL Workshop
+
+---
+export default Layout
+
+# My name is Sara
+
+---
+
+export default Split
+
+<img src={require("file-loader!./images/yld.gif")}/>
+
+
+* Developer Advocate at YLD
+* Really into shitty movies
+* Really into football
+
+---
+
+export default Layout
+
+# What is GraphQL?
+
+---
+
+<Image src={require("file-loader!./images/graphql.png")} />
+
+---
+export default Layout
+
+# A Query Language for your API
+
+---
+export default Layout
+
+# Why Should I Care ?
+
+---
+export default Layout
+
+# GraphQL APIs have a strongly typed schema
+
+```notes
+GraphQL uses Schema Definition Language to define your API and it requires you to set all types.
+
+There is no such thing as an object.
+```
+
+---
+export default LayoutNoFooter
+
+
+<CodeSurfer
+  code={require("!raw-loader!./src/gql.js")}
+  lang="javascript"
+  theme={nightOwl}
+/>
+
+```notes
+In this case we are creating a schema that has Speaker and Talk and a speaker can have multiple talks but a talk can only have one speaker and all their fields are typed
+```
+
+---
+export default Layout
+
+# It's framework agnostic
+
+---
+export default Layout
+
+# And language too
+
+---
+
+export default Split
+
+- Javascript
+- Typescript
+- Ruby
+- PHP
+- Python
+- Java
+- C/C++
+
+
+- Perl
+- .NET
+- Erlang
+- Elixir
+- Haskell
+- Rust
+- Lua
+
+---
+
+export default Split
+
+- Scala
+- Clojure
+- ClojureScript
+- Swift
+- OCaml
+- SQL
+
+
+- R
+- Elm
+- Julia
+- Kotlin
+- Crystal
+- Go
+
+---
+export default Layout
+
+# You get the Point
+
+---
+export default Layout
+
+# Automatic Documentation
+
+---
+export default Layout
+
+Since you have to type all your API graphql uses that to create automatic documentation for your API
+
+---
+export default Layout
+
+# UI Editors
+
+---
+export default LayoutNoFooter
+
+# GraphQL Playground
+
+<BGImage src="https://camo.githubusercontent.com/1a26385e3543849c561cfafd0c25de791a635570/68747470733a2f2f692e696d6775722e636f6d2f41453557364f572e706e67" />
+
+---
+export default LayoutNoFooter
+
+# GraphiQL
+
+<BGImage src="https://github.com/graphql/graphiql/raw/master/resources/graphiql.png" />
+
+---
+export default Layout
+
+# You get what you asked for
+
+---
+
+export default Layout
+
+# The Frontend is Love
+
+---
+export default Layout
+
+Tools like Apollo handle all the loading and error states for you.
+
+---
+export default Layout
+
+Also the Caching. And we hate caching.
+
+---
+
+export default Layout
+
+# React Example
+
+---
+
+<CodeSurfer
+  code={require("!raw-loader!./src/query.js")}
+  lang="jsx"
+  theme={nightOwl}
+/>
+---
+export default Layout
+
+# There is no limit to what you can build
+
+
+---
+export default LayoutNoFooter
+
+# Apollo Link State
+
+<BGImage src={require("file-loader!./images/link-state.png")}/>
+
+---
+export default LayoutNoFooter
+
+# GraphQL CSS
+
+<BGImage src={require("file-loader!./images/css.png")}/>
+
+---
+
+export default Layout
+
+# Ready to learn ?
+
+---
+
+<CodeSurfer
+  code={`
+    git clone git@github.com:SaraVieira/graphql-workshop.git
+    cd graphql-workshop/1 - server-start
+    yarn # or npm i
+  `}
+  lang="bash"
+  theme={nightOwl}
+/>
+

@@ -6,6 +6,10 @@ In this 8 hour workshop we will create a GraphQL server with Apollo Server, conn
 
 After that we will jump to the frontend using React and Apollo to query and mutate a GraphQL Endpoint easily.
 
+## Presentation
+
+[https://graphql-workshop-presentation.now.sh/](https://graphql-workshop-presentation.now.sh/)
+
 ## Requirements
 
 - Node installed, I have version 10.3.0 but anything that supports async await is great!
