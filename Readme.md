@@ -69,7 +69,7 @@ yarn dev
 - Part 5 (1h 16:15m) - https://www.youtube.com/watch?v=9bz2xKqDkek
 
 
-## Eexercises
+## Exercises
 
 ### Queries
 
