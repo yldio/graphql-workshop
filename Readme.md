@@ -82,7 +82,7 @@ yarn dev
 - 3: Variables in Query - Start: https://codesandbox.io/s/y20oywypmx
 - 3: Variables in Query - End: https://codesandbox.io/s/x7513py6rq
 - 3.1: Variables - Exercise - https://codesandbox.io/s/k9l6ypj7p5
-- 3.1: Variables - Exercise - End - https://codesandbox.io/s/pkkxjv287j
+- 3.1.1: Variables - Exercise - End - https://codesandbox.io/s/pkkxjv287j
 
 
 ### Mutations
