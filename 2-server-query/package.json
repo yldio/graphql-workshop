@@ -1,0 +1,22 @@
+{
+  "name": "graphql-workshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "Sara Vieira",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.1.0",
+    "dotenv": "^6.0.0",
+    "graphql": "^14.0.2",
+    "nodemon": "^1.18.4",
+    "pg": "^7.5.0",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.39.0"
+  }
+}

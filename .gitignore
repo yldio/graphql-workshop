@@ -1,8 +1,2 @@
-node_modules
+.env
 .DS_Store
-Thumbs.db
-.idea/
-.vscode/
-*.sublime-project
-*.sublime-workspace
-*.log

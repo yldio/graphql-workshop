@@ -40,7 +40,7 @@ After that we will jump to the frontend using React and Apollo to query and muta
 - Using pagination
 - Questions
 
-## What We will be building:
+## What We will be building
 
 - Server: [https://graphql-workshop-server.now.sh/](https://graphql-workshop-server.now.sh/)
 - Front End: [https://graphql-workshop-fe.now.sh/](https://graphql-workshop-fe.now.sh/)
@@ -53,11 +53,9 @@ After that we will jump to the frontend using React and Apollo to query and muta
 
 ```bash
 git clone git@github.com:SaraVieira/graphql-workshop.git
-cd graphql-workshop/1 - server-start
+cd graphql-workshop/1-server-start
 yarn # or npm i
-
-cd server-start-start
-yarn dev
+yarn dev # npm run dev
 ```
 
 ## Videos (4h)
@@ -68,8 +66,7 @@ yarn dev
 - Part 4 (25:04m) - https://www.youtube.com/watch?v=fIfRfbjiBUI
 - Part 5 (1h 16:15m) - https://www.youtube.com/watch?v=9bz2xKqDkek
 
-
-## Eexercises
+## Exercises
 
 ### Queries
 
@@ -84,7 +81,6 @@ yarn dev
 - 3.1: Variables - Exercise - https://codesandbox.io/s/k9l6ypj7p5
 - 3.1: Variables - Exercise - End - https://codesandbox.io/s/pkkxjv287j
 
-
 ### Mutations
 
 - 1: Start - https://codesandbox.io/s/l5k20vz4v7
@@ -95,4 +91,3 @@ yarn dev
 - 2: Update UI - End: https://codesandbox.io/s/r74mqn22jm
 - 2.1: Update Ui Exercise - Start: https://codesandbox.io/s/5z2krwqyon
 - 2.1: Update Ui Exercise - End: https://codesandbox.io/s/yqr36koox9
-
