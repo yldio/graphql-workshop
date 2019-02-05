@@ -52,7 +52,7 @@ After that we will jump to the frontend using React and Apollo to query and muta
 ## Start
 
 ```bash
-git clone git@github.com:SaraVieira/graphql-workshop.git
+git clone git@github.com:yldio/graphql-workshop.git
 cd graphql-workshop/1-server-start
 yarn # or npm i
 yarn dev # npm run dev
