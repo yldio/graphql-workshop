@@ -46,8 +46,7 @@ const Split = ({ children }) => {
         ))}
       </Flex>
       <Footer>
-        <span>LvivJS 🇺🇦</span>
-        <span>@NIkkitaFTW</span>
+        <span>@YLDio</span>
       </Footer>
     </Root>
   )

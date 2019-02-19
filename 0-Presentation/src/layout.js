@@ -26,8 +26,8 @@ const Layout = ({ children }) => (
   <Fragment>
     <Wrapper>{children}</Wrapper>
     <Footer>
-      <span>YLD</span>
-      <span>@NIkkitaFTW</span>
+      <span>www.yld.io</span>
+      <span>@YLDio</span>
     </Footer>
   </Fragment>
 )
